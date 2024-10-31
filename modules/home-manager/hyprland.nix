@@ -91,10 +91,10 @@
         "$mod SHIFT, L, movewindow, r"
 
         # Resize window
-        "$mod ALT, h, resizeactive -10 0"
-        "$mod ALT, j, resizeactive 0  10"
-        "$mod ALT, k, resizeactive 0 -10"
-        "$mod ALT, l, resizeactive 10  0"
+        "$mod ALT, h, resizeactive, -10 0"
+        "$mod ALT, j, resizeactive, 0  10"
+        "$mod ALT, k, resizeactive, 0 -10"
+        "$mod ALT, l, resizeactive, 10  0"
 
 
         # Switch workspaces
