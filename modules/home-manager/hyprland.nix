@@ -78,8 +78,8 @@
         "$mod, E, pseudo"
 
         # Screenshots
-        "PRINT, exec, hyprshot -m output"
-        "PRINT SHIFT, exec, hyprshot -m region"
+        ",PRINT, exec, hyprshot -m output"
+        ",PRINT SHIFT, exec, hyprshot -m region"
 
         # Change window focus
         "$mod, H, movefocus, l"
