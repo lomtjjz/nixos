@@ -77,11 +77,25 @@
         "$mod, W, togglesplit"
         "$mod, E, pseudo"
 
+
         # Change window focus
-        "$mod, h, movefocus, l"
-        "$mod, j, movefocus, d"
-        "$mod, k, movefocus, u"
-        "$mod, l, movefocus, r"
+        "$mod, H, movefocus, l"
+        "$mod, J, movefocus, d"
+        "$mod, K, movefocus, u"
+        "$mod, L, movefocus, r"
+
+        # Move window
+        "$mod SHIFT, H, movewindow, l"
+        "$mod SHIFT, J, movewindow, d"
+        "$mod SHIFT, K, movewindow, u"
+        "$mod SHIFT, L, movewindow, r"
+
+        # Resize window
+        "$mod ALT, h, resizeactive -10 0"
+        "$mod ALT, j, resizeactive 0  10"
+        "$mod ALT, k, resizeactive 0 -10"
+        "$mod ALT, l, resizeactive 10  0"
+
 
         # Switch workspaces
         "$mod, 1, workspace, 1"
