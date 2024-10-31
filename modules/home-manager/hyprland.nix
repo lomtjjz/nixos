@@ -157,6 +157,8 @@
 
   home.packages = with pkgs; [
     hyprpaper
+
     neofetch
+    nnn
   ];
 }
