@@ -77,6 +77,9 @@
         "$mod, W, togglesplit"
         "$mod, E, pseudo"
 
+        # Screenshots
+        "PRINT, exec, hyprshot -m output"
+        "PRINT SHIFT, exec, hyprshot -m region"
 
         # Change window focus
         "$mod, H, movefocus, l"
@@ -157,6 +160,7 @@
 
   home.packages = with pkgs; [
     hyprpaper
+    hyprshot
 
     neofetch
     nnn
