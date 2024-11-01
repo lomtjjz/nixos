@@ -13,6 +13,6 @@ do
 done
 
 nixos-rebuild switch --flake /etc/nixos#default #&& \
-#	sudo -u "$SUDO_USER" git add ./* && \
-#      	sudo -u "$SUDO_USER" git commit -m "$(date +"%D %T")"
+	sudo -u "$SUDO_USER" git add ./* && \
+      	sudo -u "$SUDO_USER" git commit -m "$(date +"%D %T")"
 
