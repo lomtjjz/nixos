@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./ncmpcpp.nix
+    ./vimpc.nix
     ./term.nix
   ];
 }

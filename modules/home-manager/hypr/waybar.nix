@@ -13,10 +13,22 @@
 
         modules-left = [ "hyprland/workspaces" ];
         modules-center = [ "clock" ];
-        modules-right = [ "tray" "network" ];
+        modules-right = [ "tray" "mpd" "pulseaudio" "network" ];
 
         clock = {
           format = "{:%H:%M %D}";
+        };
+
+        mpd = {
+          format = "[ {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ]";
+          format-disconnected = "";
+          format-stopped = "[ {album} - {title} (STOPPED) ]";
+          interval = 10;
+        };
+
+        pulseaudio = {
+          format = "[ {volume}% ]";
+          format-muted = "[ MUTED ]";
         };
 
         network = {

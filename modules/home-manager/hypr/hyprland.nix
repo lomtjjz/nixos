@@ -7,9 +7,10 @@
     settings = {
       monitor = ",preferred,auto,auto";
 
-      "$terminal" = "kitty";
       "$fileManager" = "kitty nnn";
       "$drun" = "rofi -show drun";
+      "$music" = "kitty vimpc";
+      "$terminal" = "kitty";
 
       env = [
         "XCURSOR_THEME, Vanilla-DMZ"
@@ -72,6 +73,7 @@
         "$mod, S, exec, $terminal"
         "$mod, F, exec, $fileManager"
         "$mod, D, exec, $drun"
+        "$mod, A, exec, $music"
        
         "$mod, SPACE, togglefloating"
         "$mod, W, togglesplit"
