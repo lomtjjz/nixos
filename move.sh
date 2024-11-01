@@ -5,6 +5,7 @@ rm -Rf /etc/nixos/*
 for file in ./*;
 do
 	[[ "$file" == "$0" ]] && continue
+	[[ "$(basename "$file")" == "LICENSE" ]] && continue
 
 	[[ -e /etc/nixos/"$(basename "$file")" ]] && diff -u /etc/nixos/"$(basename "$file")" "$file"
 	cp -r "$file" /etc/nixos/"$(basename "$file")"

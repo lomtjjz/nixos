@@ -146,4 +146,8 @@
   };
   
   home.packages = [ pkgs.hyprshot ];
+  xdg.portal = { 
+    enable = true; 
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
 }

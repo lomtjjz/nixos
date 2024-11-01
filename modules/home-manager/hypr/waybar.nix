@@ -21,8 +21,8 @@
 
         mpd = {
           format = "[ {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ]";
+          format-stopped = "[ MPD STOPPED ]";
           format-disconnected = "";
-          format-stopped = "[ {album} - {title} (STOPPED) ]";
           interval = 10;
         };
 
