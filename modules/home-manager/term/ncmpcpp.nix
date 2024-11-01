@@ -3,7 +3,7 @@
 {
   services.mpd = {
     enable = true;
-    musicDirectory = "${home.homeDirectory}/Music";
+    musicDirectory = "$HOME/Music";
   };
   programs.ncmpcpp = {
     enable = true;
