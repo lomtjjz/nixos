@@ -6,8 +6,6 @@
     ./hardware-configuration.nix
     ./modules/nixos/services.nix
     ./modules/nixos/hyprland.nix
-    ./modules/nixos/progs.nix
-    ./modules/nixos/term.nix
     ./modules/nixos/virt.nix
 
     inputs.home-manager.nixosModules.default

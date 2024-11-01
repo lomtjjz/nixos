@@ -2,11 +2,9 @@
 
 {
   imports = [
-    ./modules/home-manager/hyprland.nix
-    ./modules/home-manager/waybar.nix
-    ./modules/home-manager/fonts.nix
-    ./modules/home-manager/kitty.nix
-    ./modules/home-manager/rofi.nix
+    ./modules/home-manager/progs
+    ./modules/home-manager/hypr
+    ./modules/home-manager/term
   ];
 
   home = {

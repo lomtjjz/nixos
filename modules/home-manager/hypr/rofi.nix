@@ -5,8 +5,7 @@
     enable = true;
     package = pkgs.rofi-wayland;
 
-    configPath = "$XDG_CONFIG_HOME/.config/rofi/config.rasi";
-    font = "Hack 14";
+    font = "Hack 16";
     cycle = false;
 
 #    extraConfig = {

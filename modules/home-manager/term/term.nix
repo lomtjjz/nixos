@@ -1,13 +1,15 @@
 # Terminal programs like vim
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     vim_configurable
     
     python3
-    
     gcc
     gdb
+
+    nerdfetch
+    nnn
   ];
 }

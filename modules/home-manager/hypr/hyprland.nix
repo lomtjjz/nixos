@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ...}:
+{ pkgs, ... }:
 
 {
   wayland.windowManager.hyprland = {
@@ -142,27 +142,6 @@
       windowrulev2 = "suppressevent maximize, class:.* # You'll probably like this.";
     };
   };
-
-  home.pointerCursor = {
-    gtk.enable = true;
-    package = pkgs.vanilla-dmz;
-    name = "Vanilla-DMZ";
-    size = 24;
-  };
-
-  services.hyprpaper = {
-    enable = true;
-    settings = {
-      preload = [ "/home/chad/Pictures/wallpaper.png" ];
-      wallpaper = [ ",/home/chad/Pictures/wallpaper.png" ];
-    };
-  };
-
-  home.packages = with pkgs; [
-    hyprpaper
-    hyprshot
-
-    neofetch
-    nnn
-  ];
+  
+  home.packages = [ pkgs.hyprshot ];
 }
