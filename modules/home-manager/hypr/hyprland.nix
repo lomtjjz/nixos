@@ -57,7 +57,7 @@
       misc = { 
         force_default_wallpaper = 1;
         disable_hyprland_logo = true;
-        suppress_portal_warnings = 1;
+        disable_xdg_env_checks = true;
       };
 
 
