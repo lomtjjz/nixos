@@ -9,5 +9,8 @@
       size = 14;
     };
     themeFile = "Chalk";
+    extraConfig = ''
+      confirm_os_window_close 0
+    '';
   };
 }
