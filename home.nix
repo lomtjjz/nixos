@@ -10,6 +10,13 @@
   home = {
     username = "chad";
     homeDirectory = "/home/chad";
+    file.".profile" = {
+      enable = true;
+      target = ".profile";
+      text = ''
+      . ".local/state/nix/profiles/profile/etc/profile.d/hm-session-vars.sh"
+      '';
+    };
 
     sessionVariables = {
       EDITOR = "vim";
