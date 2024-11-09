@@ -14,7 +14,7 @@
       enable = true;
       target = ".profile";
       text = ''
-      . "/home/chad/.local/state/nix/profiles/profile/etc/profile.d/hm-session-vars.sh"
+      source "/home/chad/.local/state/nix/profiles/profile/etc/profile.d/hm-session-vars.sh"
       '';
     };
 

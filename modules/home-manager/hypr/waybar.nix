@@ -24,6 +24,7 @@
           format-stopped = "[ MPD STOPPED ]";
           format-disconnected = "";
           interval = 10;
+          max-length = 32;
         };
 
         pulseaudio = {
