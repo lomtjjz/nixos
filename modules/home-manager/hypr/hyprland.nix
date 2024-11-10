@@ -82,7 +82,7 @@
 
         # Screenshots
         ",PRINT, exec, hyprshot -m output"
-        ",PRINT SHIFT, exec, hyprshot -m region"
+        "SHIFT, PRINT, exec, hyprshot -m region"
 
         # Change window focus
         "$mod, H, movefocus, l"
