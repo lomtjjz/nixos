@@ -146,5 +146,5 @@
     };
   };
   
-  home.packages = [ pkgs.hyprshot ];
+  home.packages = [ pkgs.hyprshot pkgs.brightnessctl ];
 }
