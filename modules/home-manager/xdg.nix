@@ -12,7 +12,7 @@
         "image/png" = "feh.desktop";
         "image/jpeg" = "feh.desktop";
 
-        "text/plain" = "vim.desktop";
+        "text/plain" = "vim-edit.desktop";
         "application/pdf" = "librewolf.desktop";
         
         "text/html" = "librewolf.desktop";
