@@ -8,6 +8,8 @@
 
   home.packages = with pkgs; [
     vim_configurable
+    tmux
+    fzf
 
     python3
     gcc
@@ -15,5 +17,11 @@
 
     nerdfetch
     nnn
+
+    unzip
+    zip
+
+
+    iamb
   ];
 }
