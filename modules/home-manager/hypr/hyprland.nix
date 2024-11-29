@@ -62,19 +62,21 @@
 
 
       input = {
-        kb_layout = "pl";
+        kb_layout = "pl,by";
+        kb_options = "grp:alt_shift_toggle";
         touchpad.natural_scroll = true;
       };
 
       "$mod" = "SUPER";
       bind = [
         "$mod SHIFT, Q, killactive,"
-        "$mod SHIFT, E, exit"
+        "$mod SHIFT, E, exec, rofi -show p -modi p:'rofi-pm' -font 'Hack 18' -theme-str 'window {width: 8em;} listview {lines: 3;}'"
 
         "$mod, S, exec, $terminal"
         "$mod, F, exec, $fileManager"
         "$mod, D, exec, $drun"
         "$mod, A, exec, $music"
+        "$mod, Q, exec, rofi -matching glob -show p -modi p:'rofi-cp'"
        
         "$mod, SPACE, togglefloating"
         "$mod, W, togglesplit"
