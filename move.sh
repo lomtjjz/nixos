@@ -6,28 +6,41 @@ then
 	exit 1
 fi
 
+while test $# != 0
+do
+	case "$1" in 
+		-c) commitf=true ;;
+		-v) verbosef=true ;;
+	esac
+	shift
+done
+
+
+
 rm -Rf /etc/nixos/*
 
 for file in ./*;
 do
-	[[ "$file" == "$0" ]] && continue
-	[[ "$(basename "$file")" == "LICENSE" ]] && continue
+	[ "$file" = "$0" ] && continue
+	[ "$(basename "$file")" = "LICENSE" ] && continue
 
 	cp -r "$file" /etc/nixos/"$(basename "$file")"
-	echo "Moving $file ..."
+	[ "$verbosef" ] && echo "Moving $file ..."
 done
 
-[[ $@ == *'v'* ]] && git diff
+
+
+[ "$verbosef" ] && git diff
 nixos-rebuild switch --flake /etc/nixos#default
 
 if [ $? -eq 1 ];
 then
-	"Build failed..."
+	echo "Build failed..."
 	exit 1
 fi
 
 
-if [[ "$@" == *"c"* ]];
+if [ "$commitf" ];
 then
 	sudo -u "$SUDO_USER" git add ./* && \
       	sudo -u "$SUDO_USER" git commit -m "$(date +"%D %T")"

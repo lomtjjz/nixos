@@ -20,6 +20,9 @@
     };
   };
 
+  documentation.man.enable = true;
+  documentation.dev.enable = true;
+  environment.localBinInPath = true;
     
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;

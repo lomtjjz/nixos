@@ -20,7 +20,6 @@
       target = ".profile";
       text = ''
         source "/home/chad/.local/state/nix/profiles/profile/etc/profile.d/hm-session-vars.sh"
-        export PATH="$HOME/.local/bin":$PATH
       '';
     };
 

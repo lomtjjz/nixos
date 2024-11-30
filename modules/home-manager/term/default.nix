@@ -15,13 +15,14 @@
     gcc
     gdb
 
+    shellcheck
     nerdfetch
+    file
     nnn
 
-    unzip
-    zip
-
-
+    unzip zip
     iamb
+
+    man-pages man-pages-posix
   ];
 }
